@@ -45,9 +45,20 @@ class HuoShuSql(object):
 
 class DataFrameToSql(HuoShuSql):
 	"""docstring for DataFrameToSql"""
-	def __init__(self, db_info):
+	def __init__(self, db_info, df):
 		super(DataFrameToSql, self).__init__(db_info)
-			
+		self.df = df
+
+	def transform(self, table_name, db_name):
+		self.df.to_sql(table_name, self.engine, schema=db_name)
+
+	def create(self):
+		link = 'postgresql+psycopg2://'+ db_conn['user'] +':'+ db_conn['pwd'] +'@' + db_conn['host'] +':'+str(5432) + '/' + db_conn['db']
+		try:	
+			self.engine = create_engine(link)	
+		except:	
+			raise ValueError('ERROR : maybe due to the abnormal data format')
+
 
 
 class SqlToDataFrame(HuoShuSql):
@@ -55,9 +66,12 @@ class SqlToDataFrame(HuoShuSql):
 	def __init__(self, db_info):
 		super(SqlToDataFrame, self).__init__(db_info)
 
-	def fit(self, sqlCode):		
+	def transform(self, sqlCode):		
 		result = self.select(sqlCode)
-		return pd.DataFrame(list(result.get('data')),columns=result.get('head'))
+		self.df = pd.DataFrame(list(result.get('data')),columns=result.get('head'))
+		
+		return self.df
+
 
 	def select(self, sqlCode):
 		self.common(sqlCode)
@@ -70,5 +84,6 @@ class SqlToDataFrame(HuoShuSql):
 		data = self._cursor.fetchall()
 		result['head'] = col_names
 		result['data'] = data
+
 		return result		
 
