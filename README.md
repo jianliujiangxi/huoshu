@@ -28,9 +28,9 @@ pip install huoshu
 - HuoShuSql.py -- provied some basic algorithm to operate and transform the data flow between pandas.DataFrame and PostgreSql, which include link the postgresql of HuoShu Tech. Inc., transform the data format between dataframe and sql, and write the data into sql database.  
 
 The improvements of HuoShuSql to finish:
-1. [TODO] add some other important basic operation such like "insert Table", "delete Table", and etc. 
-2. [TODO] make more data fomat avalible to use for algorithm engineer such like ".json", ".pickle", ".xml", and etc.
+1. - [ ] add some other important basic operation such like "insert Table", "delete Table", and etc. 
+2. - [ ] make more data fomat avalible to use for algorithm engineer such like ".json", ".pickle", ".xml", and etc.
 
 The improvements of other algorithm:
-1. [TODO] abstract some data processing methods from industrial project and construct our own pipeline for processing data with mass trouble, which cannot be utilized by engineers directly
-2. [TODO] add some models to construct the baseline for some practical applications, which include machine learning such like Regression tasks or Classification tasks, and operation research such like Planning Optimization tasks or Scheduling Optimization tasks. 
+1. - [ ] abstract some data processing methods from industrial project and construct our own pipeline for processing data with mass trouble, which cannot be utilized by engineers directly
+2. - [ ] add some models to construct the baseline for some practical applications, which include machine learning such like Regression tasks or Classification tasks, and operation research such like Planning Optimization tasks or Scheduling Optimization tasks. 
