@@ -68,9 +68,9 @@ class SqlToDataFrame(HuoShuSql):
 
 	def transform(self, sqlCode):		
 		result = self.select(sqlCode)
-		self.df = pd.DataFrame(list(result.get('data')),columns=result.get('head'))
+		self.dataframe = pd.DataFrame(list(result.get('data')),columns=result.get('head'))
 		
-		return self.df
+		return self
 
 
 	def select(self, sqlCode):

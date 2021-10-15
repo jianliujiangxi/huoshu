@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: huoshu
-Version: 1.1.4
+Version: 0.0.3
 Summary: A small example package for HuoShu Tech. to compelete
 Home-page: https://github.com/pypa/sampleproject
 Author: Jian Liu
@@ -13,6 +13,5 @@ Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-
-# This is a package for HuoShu Tech.
+[b'\r\n', b'# The package is proposed to create some basic methods for saving time and human power of algorithm engineers of ***HuoShu Tech. Inc.***\r\n', b'\r\n', b' *Welcome every engineer of HuoShu to become the contributor in this big project!!!*\r\n', b'\r\n', b'## Project Content\r\n', b'```bash\r\n', b'.\r\n', b'\xe2\x94\x9c\xe2\x94\x80build\r\n', b'\xe2\x94\x82  \xe2\x94\x9c\xe2\x94\x80bdist.win-amd64\r\n', b'\xe2\x94\x82  \xe2\x94\x94\xe2\x94\x80lib\r\n', b'\xe2\x94\x82      \xe2\x94\x94\xe2\x94\x80huoshu\r\n', b'\xe2\x94\x9c\xe2\x94\x80dist\r\n', b'\xe2\x94\x9c\xe2\x94\x80huoshu\r\n', b'\xe2\x94\x82  \xe2\x94\x94\xe2\x94\x80__pycache__\r\n', b'\xe2\x94\x94\xe2\x94\x80huoshu.egg-info\r\n', b'```\r\n', b'\r\n', b'There will be all source code implemented by Liu Jian in the directory named "**huoshu**"\r\n', b'\r\n', b'## Install\r\n', b'```python\r\n', b'pip install huoshu\r\n', b'```\r\n', b'\r\n', b'## Documents\r\n', b'\r\n', b'- HuoShuSql.py -- provied some basic algorithm to operate and transform the data flow between pandas.DataFrame and PostgreSql, which include link the postgresql of HuoShu Tech. Inc., transform the data format between dataframe and sql, and write the data into sql database.  \r\n', b'\r\n', b'The improvements of HuoShuSql to finish:\r\n', b'1. - [ ] add some other important basic operation such like "insert Table", "delete Table", and etc. \r\n', b'2. - [ ] make more data fomat avalible to use for algorithm engineer such like ".json", ".pickle", ".xml", and etc.\r\n', b'\r\n', b'The improvements of other algorithm to finish:\r\n', b'1. - [ ] abstract some data processing methods from industrial project and construct our own pipeline for processing data with mass trouble, which cannot be utilized by engineers directly\r\n', b'2. - [ ] add some models to construct the baseline for some practical applications, which include machine learning such like Regression tasks or Classification tasks, and operation research such like Planning Optimization tasks or Scheduling Optimization tasks. ']
 

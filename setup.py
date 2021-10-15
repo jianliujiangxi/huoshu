@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-	long_description = fh.read()
+with open("README.md", "rb") as fh:
+	long_description = fh.readlines()
 
 setuptools.setup(
 	name="huoshu",
-	version="1.1.4",
+	version="0.0.3",
 	author="Jian Liu",
 	author_email="jianliu9509@outlook.com",
 	description="A small example package for HuoShu Tech. to compelete",
