@@ -1,5 +1,5 @@
 
-# The package is proposed to create some basic methods for saving time and human power of algorithm engineers of ***HuoShu Tech. Inc.***
+# The package is proposed to create some basic methods for saving time and manpower of algorithm engineers of ***HuoShu Tech. Inc.***
 
  *Welcome every engineer of HuoShu to become the contributor in this project!!!*
 
